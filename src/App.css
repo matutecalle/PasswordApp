@@ -2,37 +2,105 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rule-container {
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rule-fulfilled {
+  border: 1px solid green;
+  background-color: #e0ffe0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rule-unfulfilled {
+  border: 1px solid red;
+  background-color: #ffe0e0;
+}
+
+.rule-text-fulfilled {
+  color: green;
+}
+
+.rule-text-unfulfilled {
+  color: red;
+}
+
+.captcha-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.captcha-image-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.captcha-image {
+  max-width: 150px;
+  display: block;
+}
+
+.captcha-refresh-button {
+  margin-top: 10px;
+}
+
+.google-map {
+  border: 0;
+}
+
+.wordmaster-iframe {
+  border: 15px #ffffff solid;
+  width: 1100px;
+  height: 650px;
+}
+
+.copied-message {
+  color: green;
+}
+
+.copy-button {
+  margin-top: 10px;
+}
+
+.password-input-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.password-input {
+  margin-right: 10px;
+
+}
+
+
+.advanced-panel {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.advanced-panel h3 {
+  margin-bottom: 15px;
+}
+
+.advanced-panel div {
+  margin-bottom: 10px;
+}
+
+.advanced-panel input[type="number"] {
+  width: 50px;
+}
+
+.advanced-panel button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advanced-panel button:hover {
+  background-color: #0056b3;
 }
